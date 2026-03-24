@@ -1,0 +1,29 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+  int arr[100],n,i;
+  
+  // input size of array
+  printf("enter number of element: ");
+  scanf("%d", &n);
+  
+  // input element
+  printf("enter %d elements :\n", n);
+  for(i=0;i<n;i++) {
+      scanf("d, &arr[i]");
+  }
+  // Assume first element is largest
+  int max = arr[0];
+  
+  //find largest element
+  for(i=1;1<n;i++){
+      if(arr[i]>max){
+       max = arr[i];   
+      }
+  }
+  //output result 
+  printf("largest elementm = %d",max);
+  
+  return 0;
+}
